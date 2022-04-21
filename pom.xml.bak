@@ -27,7 +27,6 @@
     <artifactId>mysql-connector-java</artifactId>
     <version>5.1.6</version>
     </dependency>
-    <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
     <dependency>
     <groupId>javax.servlet</groupId>
     <artifactId>javax.servlet-api</artifactId>
@@ -36,7 +35,7 @@
     </dependency>
     </dependencies>
     <build>
-     <plugins>
+    <plugins>
 		<plugin>
             <groupId>org.mortbay.jetty</groupId>
             <artifactId>maven-jetty-plugin</artifactId>
@@ -46,8 +45,11 @@
             </configuration>
         </plugin>
 		<plugin>
-        </plugin>
-      </plugins>
-    </pluginManagement>
+		    <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-war-plugin</artifactId>
+            <version>3.2.2</version>
+	    </plugin>
+    </plugins>
   </build>
+  
 </project>
