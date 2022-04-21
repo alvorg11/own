@@ -44,7 +44,14 @@
             <artifactId>maven-war-plugin</artifactId>
             <version>3.2.2</version>
 	    </plugin>
-    </plugins>
-  </build>
-  
+     </plugins>
+    </build>
+    <distributionManagement>
+    <snapshotRepository>
+      <id>deployment</id>
+      <name>snapshot releases</name>
+      <url>http://50.16.48.113:8081/repository/maven-snapshots/</url>
+    </snapshotRepository>
+    </distributionManagement>
+	
 </project>
